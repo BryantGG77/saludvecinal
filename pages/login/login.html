@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <section class="container">
+        <section class="titulo-minimizar">
+            <p>Inventario Salud Vecinal</p>
+            <div>
+                <a href=""><img  src="/img/minimizar.png" alt="Minimizar"></a>
+                <a href=""><img src="/img/maximizar.png" alt="Maximizar"></a>
+                <a href="/index.html"><img src="/img/cerrar-ventana.png" alt="Cerrar Ventana"></a>
+            </div>
+        </section>
+        <section class="container-form">
+            <h1>Bienvenid@</h1>
+            <form action="/login" method="post">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required>
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="contraseña" name="contraseña" required>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+
+            <p>¿No tienes una cuenta? <a href="/pages/register/register.html">Regístrate aquí</a></p>
+        </section>
+    </section>
+
+</body>
+
+</html>

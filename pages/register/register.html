@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./register.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <section class="container">
+        <section class="titulo-minimizar">
+            <p>Inventario Salud Vecinal</p>
+            <div>
+                <a href=""><img  src="/img/minimizar.png" alt="Minimizar"></a>
+                <a href=""><img src="/img/maximizar.png" alt="Maximizar"></a>
+                <a href="/index.html"><img src="/img/cerrar-ventana.png" alt="Cerrar Ventana"></a>
+            </div>
+        </section>
+        <section class="container-form">
+            <h1>Registro de usuario</h1>
+            <form>
+                <label for="nombres">Nombre(s):</label>
+                <input type="text" id="nombres" name="nombres" required>
+                <label for="apellidos">Apellido(s):</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+                <label for="tipo-de-documento">Tipo de Documento:</label>
+                <select name="tipo-de-documento" id="">
+                    <option value="cc">Cédula de Ciudadanía</option>
+                    <option value="ti">Tarjeta de Identidad</option>
+                    <option value="ce">Cédula de Extranjería</option>
+                    <option value="pp">Pasaporte</option>
+                </select>
+                <label for="numero-de-documento">Número de Documento:</label>
+                <input type="text" id="numero-de-documento" name="numero-de-documento" required>
+                <label for="fecha-de-nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" name="fecha-de-nacimiento" id="fecha-de-nacimiento" required>
+                <button type="submit">Registrarse</button>
+            </form>
+
+            <p>¿Ya tienes una cuenta? <a href="/pages/login/login.html">Inicia sesión aquí</a></p>
+        </section>
+    </section>
+
+</body>
+
+</html>
