@@ -50,10 +50,10 @@ body {
 }
 
 /* ===== CONTENIDO LOGIN ===== */
-.login-content h1 {
-    text-align: center;
+.container-form h1 {
     margin-bottom: 20px;
-    font-size: 1.4rem;
+    font-weight: 600;
+    font-size: 1.5rem;
 }
 
 form {
@@ -107,9 +107,6 @@ button:hover {
         padding: 40px;
     }
 
-    .login-content h1 {
-        font-size: 1.6rem;
-    }
 }
 
 /* Escritorio (pantallas grandes) */
@@ -123,7 +120,4 @@ button:hover {
         padding: 50px;
     }
 
-    .login-content h1 {
-        font-size: 1.8rem;
-    }
 }
