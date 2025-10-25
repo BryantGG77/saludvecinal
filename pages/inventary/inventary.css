@@ -78,6 +78,10 @@ header section div p {
     font-size: 14px;
 }
 
+.agregar-producto a:hover {
+    background-color: #0056b3;
+}
+
 
 svg {
     width: 32px;

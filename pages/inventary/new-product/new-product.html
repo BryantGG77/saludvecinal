@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./new-product.css">
+    <title>Inventario Salud Vecinal</title>
+</head>
+<body>
+
+    <header>
+        <section class="agregar-sistema">
+            <button>
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z" stroke="currentColor" stroke-width="2"></path><path d="M12 8V16M8 12H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg>
+            </button>
+            <div>
+                <h1>Salud Vecinal</h1>
+                <p>Sistema de Inventario Farmacéutico</p>
+            </div>
+        </section>
+
+        <section class="volver-inventario">
+            <a href="/pages/inventary/inventary.html">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 12H5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+             Volver al inventario
+            </a>
+            
+        </section>
+    </header>
+    
+    <main>
+        <section class="reportes-inventario">
+            <h2>Nuevo Producto</h2>
+            
+            <form action="#" method="post" class="form-nuevo-producto">
+                <label for="codigo-producto">Código:</label>
+                <input type="text" id="codigo-producto" name="codigo-producto" required>
+
+                <label for="nombre-producto">Nombre del Producto:</label>
+                <input type="text" id="nombre-producto" name="nombre-producto" required>
+
+                <label for="laboratorio">Laboratorio:</label>
+                <input type="text" id="laboratorio" name="laboratorio" required>
+
+                <label for="categoria">Categoria:</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="">Seleccione una categoría</option>
+                    <option value="medicamento">Analgésico</option>
+                    <option value="suplemento">Antibiótico</option>
+                    <option value="equipo-medico">Consumibles</option>
+                    <option value="vitamina">Vitaminas</option>
+                </select>
+
+                <label for="stock">Stock:</label>
+                <input type="number" id="stock" name="stock" required>
+
+                <label for="fecha-vencimiento">Fecha de vencimiento:</label>
+                <input type="date" id="fecha-vencimiento" name="fecha-vencimiento" required>
+
+                <label for="precio-producto">Precio:</label>
+                <input type="number" step="0.01" id="precio-producto" name="precio-producto" required>
+
+                <button type="submit">Agregar Producto</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Salud Vecinal. Sistema de gestión de inventarios</p>
+    </footer>
+</body>
+</html>
