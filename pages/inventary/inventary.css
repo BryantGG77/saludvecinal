@@ -12,6 +12,8 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    height: calc(100vh - 160px);
+
 }
 
 /* Estilos HEADER */
@@ -173,7 +175,6 @@ footer {
 
 @media (min-width: 1024px) { /* desktops */ 
     main {
-        height: calc(100vh - 160px);
     }
 }
 @media (min-width: 1440px) { /* large desktops */ 
