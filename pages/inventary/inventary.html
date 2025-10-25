@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./inventary.css">
-    <title>Inventary</title>
+    <title>Inventario Salud Vecinal</title>
 </head>
 <body>
 
     <header>
-        <section>
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z" stroke="currentColor" stroke-width="2"></path><path d="M12 8V16M8 12H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg>
+        <section class="agregar-sistema">
+            <button>
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z" stroke="currentColor" stroke-width="2"></path><path d="M12 8V16M8 12H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg>
+            </button>
             <div>
                 <h1>Salud Vecinal</h1>
                 <p>Sistema de Inventario Farmacéutico</p>
             </div>
         </section>
 
-        <section>
+        <section class="agregar-producto">
             <button>
                 Exportar
             </button>
@@ -28,11 +30,216 @@
     </header>
     
     <main>
+        <section class="buscador">
+            <input type="text" placeholder="Buscar producto...">
+            <div>
 
+                <select name="productos" id="productos">
+                    <option value="">Todos los productos</option>
+                    <option value="stock-bajo">Stock bajo</option>
+                    <option value="proximo-a-vencer">Proximo a vencer</option>
+                    <option value="vencidos">Vencidos</option>
+                </select>
+                <select name="categorias" id="categorias">
+                    <option value="">Todas las categorias</option>
+                    <option value="analgesicos">Analgesicos</option>
+                    <option value="antibioticos">Antibióticos</option>
+                    <option value="vitaminas">Vitaminas</option>
+                    <option value="consumibles">Consumibles</option>
+                </select>
+            </div>
+        </section>
+        <section class="filtrar-botones">
+            <div class="btn-filtrar">
+                <div>
+                    📦
+                </div>
+                <div>
+                    <h3>Total productos</h3>
+                    <p>256</p>
+                </div>
+            </div>
+            <div class="btn-filtrar">
+                <div>
+                    ⚠️
+                </div>
+                <div>
+                    <h3>Productos con stock bajo</h3>
+                    <p>34</p>
+                </div>
+            </div>
+            <div class="btn-filtrar">
+                <div>
+                    ⏳
+                </div>
+                <div>
+                    <h3>Productos próximos a vencer</h3>
+                    <p>12</p>
+                </div>
+            </div>
+            <div class="btn-filtrar">
+                <div>
+                    ❌
+                </div>
+                <div>
+                    <h3>Productos vencidos</h3>
+                    <p>5</p>
+                </div>
+            </div>
+        </section>
+        <section class="lista-productos">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Codigo</th>
+                        <th>Nombre del producto</th>
+                        <th>Laboratorio</th>
+                        <th>Categoria</th>
+                        <th>Stock</th>
+                        <th>Fecha de vencimiento</th>
+                        <th>Precio</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>P001</td>
+                        <td>Paracetamol 500mg</td>
+                        <td>Bayer</td>
+                        <td>Analgésico</td>
+                        <td>150</td>
+                        <td>12/2025</td>
+                        <td>$5.00</td>
+                        <td>Disponible</td>
+                        <td>
+                            <button>Editar</button>
+                            <button>Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A002</td>
+                        <td>Amoxicilina 250mg</td>
+                        <td>Pfizer</td>
+                        <td>Antibiótico</td>
+                        <td>80</td>
+                        <td>08/2024</td>
+                        <td>$12.00</td>
+                        <td>Disponible</td>
+                        <td>
+                            <button>Editar</button>
+                            <button>Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>V003</td>
+                        <td>Vitamina C 1000mg</td>
+                        <td>GNC</td>
+                        <td>Vitaminas</td>
+                        <td>200</td>
+                        <td>05/2026</td>
+                        <td>$8.00</td>
+                        <td>Disponible</td>
+                        <td>
+                            <button>Editar</button>
+                            <button>Eliminar</button>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>C004</td>
+                        <td>Guantes de látex</td>
+                        <td>3M</td>
+                        <td>Consumibles</td>
+                        <td>500</td>
+                        <td>11/2027</td>
+                        <td>$15.00</td>
+                        <td>Disponible</td>
+                        <td>
+                            <button>Editar</button>
+                            <button>Eliminar</button>
+                        </td>   
+                    </tr>
+
+                    <tr>
+                        <td>I005</td>
+                        <td>Ibuprofeno 400mg</td>
+                        <td>Johnson & Johnson</td>
+                        <td>Analgésico</td>
+                        <td>120</td>
+                        <td>03/2025</td>
+                        <td>$6.00</td>
+                        <td>Disponible</td>
+                        <td>
+                            <button>Editar</button>
+                            <button>Eliminar</button>
+                        </td>   
+                    </tr>
+
+                    <tr>
+                        <td>C006</td>
+                        <td>Ciprofloxacino 500mg</td>
+                        <td>Roche</td>
+                        <td>Antibiótico</td>
+                        <td>60</td>
+                        <td>09/2024</td>
+                        <td>$14.00</td>
+                        <td>Disponible</td>
+                        <td>
+                            <button>Editar</button>
+                            <button>Eliminar</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>V007</td>
+                        <td>Multivitamínico diario</td>
+                        <td>Nature's Bounty</td>
+                        <td>Vitaminas</td>
+                        <td>180</td>
+                        <td>07/2026</td>
+                        <td>$10.00</td>
+                        <td>Disponible</td>
+                        <td>
+                            <button>Editar</button>
+                            <button>Eliminar</button>
+                        </td>   
+                    </tr>
+
+                    <tr>
+                        <td>S008</td>
+                        <td>Mascarillas quirúrgicas</td>
+                        <td>Kimberly-Clark</td>
+                        <td>Consumibles</td>
+                        <td>300</td>
+                        <td>10/2027</td>
+                        <td>$20.00</td>
+                        <td>Disponible</td>
+                        <td>
+                            <button>Editar</button>
+                            <button>Eliminar</button>
+                        </td>
+                    </tr>   
+                    <!-- Más filas de productos pueden ser añadidas aquí -->
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <button>Anterior</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <p>...</p>
+            <button>12</button>
+            <button>Siguiente</button>
+        </section>
     </main>
 
     <footer>
-
+        <p>&copy; 2025 Salud Vecinal. Sistema de gestión de inventarios</p>
     </footer>
 </body>
 </html>

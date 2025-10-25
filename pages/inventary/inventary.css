@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -7,23 +14,174 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+/* Estilos HEADER */
+
 header {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
+    padding: 20px;
     width: 100%;
+    gap: 20px;
     background-color: #cfe8ff;
 }
 
 header section {
     display: flex;
-    align-items: center;
-    gap: 16px;
-    padding: 16px 0;
+    
 }
+
+header section div h1 {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+
+header section div p {
+    color: #333;
+    margin: 0;
+}
+
+.agregar-sistema {
+    display: flex;
+    gap: 20px;
+}
+
+.agregar-sistema button {
+    background-color: #007bff;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.agregar-producto {
+    display: flex;
+    gap: 10px;
+}
+.agregar-producto button {
+    background-color: #007bff;
+    color: #fff;
+    flex: 1;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
 
 svg {
     width: 32px;
   height: 32px;
   color: #fff;
+}
+
+
+/* Estilos MAIN */
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    height: calc(100vh - 160px);
+}
+
+.buscador {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.buscador input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.buscador div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.buscador div select {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.filtrar-botones {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-filtrar {
+    background-color: #007bff;
+    color: #fff;
+    flex: 2;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+/* Estilos FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #cfe8ff;
+    text-align: center;
+}
+
+@media (min-width: 600px) { /* tablets */ 
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .agregar-producto button {
+        font-size: 16px;
+        padding: 15px 30px;
+    }
+
+    .buscador {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .buscador input {
+        flex: 2;
+    }
+    .buscador div { 
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+@media (min-width: 992px) { /* large tablets */ 
+    
+}
+
+@media (min-width: 1024px) { /* desktops */ 
+    
+}
+@media (min-width: 1440px) { /* large desktops */ 
+
+    header {
+        padding: 20px 200px 20px 200px;
+    }
+
+    main {
+        padding: 20px 200px 20px 200px;
+    }
 }
