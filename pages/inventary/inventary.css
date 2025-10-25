@@ -213,6 +213,11 @@ th, td {
     font-weight: 600;
 }
 
+.acciones {
+    display: flex;
+    gap: 10px;
+}
+
 th {
     background-color: #f4f4f4;
     font-weight: 600;
@@ -312,8 +317,7 @@ footer {
 }
 
 @media (min-width: 1024px) { /* desktops */ 
-    main {
-    }
+   
 }
 @media (min-width: 1440px) { /* large desktops */ 
 
@@ -322,7 +326,7 @@ footer {
     }
 
     main {
-        padding: 20px 200px 20px 200px;
+        padding: 20px 180px 20px 180px;
 
     }
 }
