@@ -61,6 +61,15 @@ form {
     gap: 15px;
 }
 
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #fff;
+    cursor: pointer;
+}
+
 label {
     font-weight: 500;
     font-size: 0.9rem;
