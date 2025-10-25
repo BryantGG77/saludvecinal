@@ -86,7 +86,6 @@ main {
     flex-direction: column;
     gap: 20px;
     padding: 20px;
-    height: calc(100vh - 160px);
 }
 
 .buscador {
@@ -173,7 +172,9 @@ footer {
 }
 
 @media (min-width: 1024px) { /* desktops */ 
-    
+    main {
+        height: calc(100vh - 160px);
+    }
 }
 @media (min-width: 1440px) { /* large desktops */ 
 
@@ -183,5 +184,6 @@ footer {
 
     main {
         padding: 20px 200px 20px 200px;
+
     }
 }
